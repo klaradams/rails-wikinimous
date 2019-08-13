@@ -39,4 +39,3 @@ class ArticlesController < ApplicationController
     params.require(:article).permit(:title, :content)
   end
 end
-
