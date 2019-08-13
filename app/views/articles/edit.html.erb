@@ -1,14 +1,20 @@
-<h1> Edit Article: </h1>
+<div class="container">
+  <h1> Edit Article: </h1>
 
-<%= form_for @article do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= form_for @article do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control1' %>
+  </div>
 
-  <%= f.label :content %>
-  <%= f.text_field :content %>
+  <div class="form-group">
+    <%= f.label :content %>
+    <%= f.text_field :content, class: 'form-control2' %>
+  </div>
 
-  <%= f.submit %>
-<% end %>
+    <%= f.submit%>
+  <% end %>
+</div>
 
 
 
